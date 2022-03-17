@@ -1,0 +1,54 @@
+What is react?
+At the heart of react, are what are called "components".
+We put these components together to form the entire app.
+
+At the root will always be an "App" component
+
+For example, we can split twitter into,
+- Navbar
+- Profile
+- Trends
+- Feed (can include several 'tweet components')
+    - Tweet
+    - Like
+
+Each component is a peace of UI
+--------------
+
+Components are usually implemented using javascript, using a state and render()
+
+Ex. class Tweet {
+    state = {};
+    render() {
+
+    }
+}
+
+The output of the redner is a React element, which represents a DOM element in memory.
+We will refer to React Elements as Virtual DOMs. Any changes to the virtual DOM will be made in the real DOM.
+This is why the library is called REACT.
+
+
+===================
+
+Initializing the app
+If you want to customize the configuration, run 'npm run eject'
+'npm run start' will start the app
+
+Don't gotta worry about node_modules folder
+
+===================
+
+Here are some javascript things that we will be using frequently
+
+render() {
+    return (
+        <div className="App">
+        ...
+        </div>
+    )
+}
+Inside the return statement is what is called jsx
+Babel takes the jsx, and turns into plain javascript code that browsers can understand.
+
+
