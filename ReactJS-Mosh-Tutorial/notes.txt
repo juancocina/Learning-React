@@ -51,4 +51,13 @@ render() {
 Inside the return statement is what is called jsx
 Babel takes the jsx, and turns into plain javascript code that browsers can understand.
 
+=======================
 
+When handling a props javascript object, its important to remember that props is READ ONLY
+
+If you need to modify the input of something, you have to change it in state
+
+The component that owns a piece of state, should be the one modifying it
+
+In the case we have here of counters/counter. We will have Counter raise the event, and have Counters
+handle the event. We will pass the reference to the event via props.
